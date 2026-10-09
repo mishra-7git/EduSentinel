@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard | EduSentinel</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Edu<span>Sentinel</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="report.html">Report Incident</a>
+
+            <a href="track-complaint.html">Track Complaint</a>
+
+            <a href="about.html">About</a>
+
+            <a href="login.html">Logout</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= DASHBOARD ================= -->
+
+    <main class="student-dashboard">
+
+        <div class="dashboard-container">
+
+
+            <!-- ================= BRAND ================= -->
+
+            <section class="dashboard-brand">
+
+                <p class="brand-tag">
+                    EDUSENTINEL
+                </p>
+
+                <h1>
+                    Protecting Fair Examinations
+                </h1>
+
+                <p>
+                    Together we can protect students,
+                    examination integrity and a fair future.
+                </p>
+
+            </section>
+
+
+            <!-- ================= IMAGE SLIDER ================= -->
+
+            <section class="dashboard-slider">
+
+                <div class="slider-container">
+
+
+                    <!-- IMAGE 1 -->
+
+                    <div class="dashboard-slide active">
+
+                        <img
+                            src="assets/paper-leak-law.jpeg"
+                            alt="Paper Leak Law">
+
+                        <div class="slide-overlay">
+
+                            <h2>
+                                Stop Exam Paper Leaks
+                            </h2>
+
+                            <p>
+                                Protecting fairness and integrity
+                                in examinations.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- IMAGE 2 -->
+
+                    <div class="dashboard-slide">
+
+                        <img
+                            src="assets/neet-crisis.jpeg"
+                            alt="Education Crisis">
+
+                        <div class="slide-overlay">
+
+                            <h2>
+                                Paper Leaks Affect Every Student
+                            </h2>
+
+                            <p>
+                                Every student deserves a fair
+                                opportunity.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- IMAGE 3 -->
+
+                    <div class="dashboard-slide">
+
+                        <img
+                            src="assets/student-protest.jpeg"
+                            alt="Students Against Paper Leaks">
+
+                        <div class="slide-overlay">
+
+                            <h2>
+                                Students Deserve Fair Examinations
+                            </h2>
+
+                            <p>
+                                Together we can raise our voice
+                                against unfair practices.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- IMAGE 4 -->
+
+                    <div class="dashboard-slide">
+
+                        <img
+                            src="assets/neet-paper-setter.jpeg"
+                            alt="Paper Setter Process">
+
+                        <div class="slide-overlay">
+
+                            <h2>
+                                Awareness Can Prevent Leaks
+                            </h2>
+
+                            <p>
+                                Stay informed and report
+                                suspicious activities.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- IMAGE 5 -->
+
+                    <div class="dashboard-slide">
+
+                        <img
+                            src="assets/paper-leak-awareness.jpeg"
+                            alt="Paper Leak Awareness">
+
+                        <div class="slide-overlay">
+
+                            <h2>
+                                Protect Your Future
+                            </h2>
+
+                            <p>
+                                Report suspected paper leaks
+                                through EduSentinel.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================= BUTTONS ================= -->
+
+                    <button
+                        type="button"
+                        class="slider-btn back-btn"
+                        onclick="previousSlide()">
+
+                        ← Back
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="slider-btn skip-btn"
+                        onclick="skipSlider()">
+
+                        Skip
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="slider-btn next-btn"
+                        onclick="nextSlide()">
+
+                        Next →
+
+                    </button>
+
+
+                    <!-- ================= DOTS ================= -->
+
+                    <div class="slider-dots">
+
+                        <span
+                            class="slider-dot active"
+                            onclick="showSlide(0)">
+                        </span>
+
+                        <span
+                            class="slider-dot"
+                            onclick="showSlide(1)">
+                        </span>
+
+                        <span
+                            class="slider-dot"
+                            onclick="showSlide(2)">
+                        </span>
+
+                        <span
+                            class="slider-dot"
+                            onclick="showSlide(3)">
+                        </span>
+
+                        <span
+                            class="slider-dot"
+                            onclick="showSlide(4)">
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= WELCOME ================= -->
+
+            <section class="student-welcome">
+
+                <div>
+
+                    <p class="dashboard-tag">
+                        STUDENT DASHBOARD
+                    </p>
+
+                    <h2>
+                        Welcome, Student 👋
+                    </h2>
+
+                    <p>
+                        Monitor your reports, track complaints
+                        and stay informed about examination integrity.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="report.html"
+                    class="dashboard-report-btn">
+
+                    + Report Incident
+
+                </a>
+
+            </section>
+
+
+            <!-- ================= STATISTICS ================= -->
+
+            <section class="student-stats">
+
+
+                <div class="student-stat-card">
+
+                    <div class="stat-icon">
+                        📋
+                    </div>
+
+                    <div>
+
+                        <h3>03</h3>
+
+                        <p>
+                            Total Reports
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="student-stat-card">
+
+                    <div class="stat-icon">
+                        🔍
+                    </div>
+
+                    <div>
+
+                        <h3>01</h3>
+
+                        <p>
+                            Under Review
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="student-stat-card">
+
+                    <div class="stat-icon">
+                        ⚠️
+                    </div>
+
+                    <div>
+
+                        <h3>01</h3>
+
+                        <p>
+                            Investigating
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="student-stat-card">
+
+                    <div class="stat-icon">
+                        ✅
+                    </div>
+
+                    <div>
+
+                        <h3>01</h3>
+
+                        <p>
+                            Resolved
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= IMPORTANT UPDATES ================= -->
+
+            <section class="dashboard-card alert-card">
+
+
+                <div class="card-heading alert-heading">
+
+                    <div>
+
+                        <h2>
+                            Important Updates
+                        </h2>
+
+                        <p>
+                            Latest updates related to your reports
+                        </p>
+
+                    </div>
+
+
+                    <div class="alert-heading-right">
+
+                        <span class="alert-count">
+                            3 New
+                        </span>
+
+
+                        <button
+                            type="button"
+                            class="close-alert-btn"
+                            onclick="closeImportantAlerts()">
+
+                            ✕
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="alerts-list">
+
+
+                    <!-- ALERT 1 -->
+
+                    <div class="alert-item alert-important">
+
+                        <div class="alert-symbol">
+                            🚨
+                        </div>
+
+                        <div class="alert-content">
+
+                            <div class="alert-title-row">
+
+                                <strong>
+                                    Complaint Successfully Received
+                                </strong>
+
+                                <span class="alert-label important-label">
+                                    IMPORTANT
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Your complaint
+                                <strong>EDU-2026-00125</strong>
+                                has been successfully received
+                                and is now under review.
+                            </p>
+
+                            <small>
+                                Just now
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ALERT 2 -->
+
+                    <div class="alert-item alert-update">
+
+                        <div class="alert-symbol">
+                            🔎
+                        </div>
+
+                        <div class="alert-content">
+
+                            <div class="alert-title-row">
+
+                                <strong>
+                                    Investigation Update
+                                </strong>
+
+                                <span class="alert-label update-label">
+                                    UPDATE
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Complaint
+                                <strong>EDU-2026-00114</strong>
+                                has moved to the investigation stage.
+                            </p>
+
+                            <small>
+                                2 days ago
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ALERT 3 -->
+
+                    <div class="alert-item alert-info">
+
+                        <div class="alert-symbol">
+                            🔒
+                        </div>
+
+                        <div class="alert-content">
+
+                            <div class="alert-title-row">
+
+                                <strong>
+                                    Privacy & Confidentiality
+                                </strong>
+
+                                <span class="alert-label info-label">
+                                    INFO
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Your identity is kept confidential
+                                and is accessible only to authorized
+                                officials when required.
+                            </p>
+
+                            <small>
+                                System notification
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="view-alerts">
+
+                    <a href="#">
+                        View All Notifications →
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= MY COMPLAINTS ================= -->
+
+            <section class="dashboard-card">
+
+
+                <div class="card-heading">
+
+                    <div>
+
+                        <h2>
+                            My Complaints
+                        </h2>
+
+                        <p>
+                            Your recently submitted reports
+                        </p>
+
+                    </div>
+
+                    <a href="track-complaint.html">
+                        Track All
+                    </a>
+
+                </div>
+
+
+                <!-- COMPLAINT 1 -->
+
+                <div class="complaint-item">
+
+                    <div>
+
+                        <a href="incident-details.html" class="complaint-id">
+    EDU-2026-00125
+</a>
+
+                        <p>
+                            Suspected Paper Leak
+                        </p>
+
+                        <small>
+                            Reported: 06 October 2026
+                        </small>
+
+                    </div>
+
+                    <span class="complaint-status review">
+                        Under Review
+                    </span>
+
+                </div>
+
+
+                <!-- COMPLAINT 2 -->
+
+                <div class="complaint-item">
+
+                    <div>
+
+                        <a href="incident-details.html" class="complaint-id">
+    EDU-2026-00114
+</a>
+
+                        <p>
+                            Suspicious Question Paper
+                        </p>
+
+                        <small>
+                            Reported: 03 October 2026
+                        </small>
+
+                    </div>
+
+                    <span class="complaint-status investigating">
+                        Investigating
+                    </span>
+
+                </div>
+
+
+                <!-- COMPLAINT 3 -->
+
+                <div class="complaint-item">
+
+                    <div>
+<a href="incident-details.html" class="complaint-id">
+    EDU-2026-00098
+</a>
+                        
+
+                        <p>
+                            Unauthorized Access
+                        </p>
+
+                        <small>
+                            Reported: 28 September 2026
+                        </small>
+
+                    </div>
+
+                    <span class="complaint-status resolved">
+                        Resolved
+                    </span>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= QUICK ACTIONS ================= -->
+
+            <section class="quick-actions">
+
+                <h2>
+                    Quick Actions
+                </h2>
+
+
+                <div class="quick-action-grid">
+
+
+                    <a
+                        href="report.html"
+                        class="quick-action">
+
+                        <span>🚨</span>
+
+                        <strong>
+                            Report Incident
+                        </strong>
+
+                        <small>
+                            Submit a suspected exam paper leak
+                        </small>
+
+                    </a>
+
+
+                    <a
+                        href="track-complaint.html"
+                        class="quick-action">
+
+                        <span>🔎</span>
+
+                        <strong>
+                            Track Complaint
+                        </strong>
+
+                        <small>
+                            Check your complaint status
+                        </small>
+
+                    </a>
+
+
+                    <a
+                        href="about.html"
+                        class="quick-action">
+
+                        <span>ℹ️</span>
+
+                        <strong>
+                            Learn More
+                        </strong>
+
+                        <small>
+                            Understand how EduSentinel works
+                        </small>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= PRIVACY ================= -->
+
+            <div class="dashboard-privacy">
+
+                🔒
+
+                <strong>
+                    Your Privacy Matters:
+                </strong>
+
+                Your personal information is not publicly displayed.
+                Access to sensitive information is restricted
+                to authorized officials.
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <p>
+            © 2026 EduSentinel.
+            Protecting the integrity of examinations.
+        </p>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

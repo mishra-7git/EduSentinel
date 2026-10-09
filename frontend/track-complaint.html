@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Track Complaint | EduSentinel</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+    <!-- ==============================
+         NAVBAR
+    =============================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Edu<span>Sentinel</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#features">
+                Features
+            </a>
+
+            <a href="index.html#how-it-works">
+                How It Works
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ==============================
+         TRACK COMPLAINT SECTION
+    =============================== -->
+
+    <section class="track-section">
+
+        <div class="track-container">
+
+
+            <!-- HEADER -->
+
+            <div class="track-header">
+
+                <div class="track-icon">
+                    🔎
+                </div>
+
+                <p class="track-tag">
+                    COMPLAINT TRACKING
+                </p>
+
+                <h1>
+                    Track Your Complaint
+                </h1>
+
+                <p>
+                    Enter your Complaint ID to check the current status
+                    and progress of your reported incident.
+                </p>
+
+            </div>
+
+
+            <!-- ==============================
+                 TRACKING CARD
+            =============================== -->
+
+            <div class="track-card">
+
+
+                <!-- TRACK FORM -->
+
+                <form id="trackForm">
+
+                    <div class="track-field">
+
+                        <label for="complaintId">
+                            Complaint ID
+                        </label>
+
+                        <input
+                            type="text"
+                            id="complaintId"
+                            placeholder="Example: EDU-2026-00125"
+                            required
+                        >
+
+                        <small>
+                            Enter the Complaint ID received after submitting your report.
+                        </small>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="track-button"
+                    >
+                        Track Complaint
+                    </button>
+
+                </form>
+
+
+                <!-- ==============================
+                     COMPLAINT RESULT
+                =============================== -->
+
+                <div
+                    class="track-result"
+                    id="trackResult"
+                    style="display: none;"
+                >
+
+
+                    <!-- STATUS -->
+
+                    <div class="result-header">
+
+                        <span>
+                            Complaint Status
+                        </span>
+
+                        <span class="status-badge">
+                            Received
+                        </span>
+
+                    </div>
+
+
+                    <!-- BASIC INFORMATION -->
+
+                    <div class="result-info">
+
+
+                        <!-- Complaint ID -->
+
+                        <div>
+
+                            <strong>
+                                Complaint ID
+                            </strong>
+
+                            <p id="displayId">
+                                -
+                            </p>
+
+                        </div>
+
+
+                        <!-- Incident Type -->
+
+                        <div>
+
+                            <strong>
+                                Incident Type
+                            </strong>
+
+                            <p id="displayIncidentType">
+                                -
+                            </p>
+
+                        </div>
+
+
+                        <!-- Exam -->
+
+                        <div>
+
+                            <strong>
+                                Exam
+                            </strong>
+
+                            <p id="displayExam">
+                                -
+                            </p>
+
+                        </div>
+
+
+                        <!-- Reported On -->
+
+                        <div>
+
+                            <strong>
+                                Reported On
+                            </strong>
+
+                            <p id="displayReportedOn">
+                                -
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- ==============================
+                         COMPLAINT PROGRESS
+                    =============================== -->
+
+                    <div class="progress-section">
+
+                        <h3>
+                            Complaint Progress
+                        </h3>
+
+
+                        <div class="progress-line">
+
+
+                            <!-- STEP 1 -->
+
+                            <div
+                                class="progress-step completed"
+                                id="stepReported"
+                            >
+
+                                <span>
+                                    ✓
+                                </span>
+
+                                <p>
+                                    Reported
+                                </p>
+
+                            </div>
+
+
+                            <!-- STEP 2 -->
+
+                            <div
+                                class="progress-step completed"
+                                id="stepReceived"
+                            >
+
+                                <span>
+                                    ✓
+                                </span>
+
+                                <p>
+                                    Received
+                                </p>
+
+                            </div>
+
+
+                            <!-- STEP 3 -->
+
+                            <div
+                                class="progress-step"
+                                id="stepReview"
+                            >
+
+                                <span>
+                                    3
+                                </span>
+
+                                <p>
+                                    Under Review
+                                </p>
+
+                            </div>
+
+
+                            <!-- STEP 4 -->
+
+                            <div
+                                class="progress-step"
+                                id="stepInvestigating"
+                            >
+
+                                <span>
+                                    4
+                                </span>
+
+                                <p>
+                                    Investigating
+                                </p>
+
+                            </div>
+
+
+                            <!-- STEP 5 -->
+
+                            <div
+                                class="progress-step"
+                                id="stepAction"
+                            >
+
+                                <span>
+                                    5
+                                </span>
+
+                                <p>
+                                    Action Taken
+                                </p>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRIVACY NOTE -->
+
+                    <div class="privacy-note">
+
+                        🔒 Your personal identity is kept confidential
+                        and is accessible only to authorized officials
+                        when required for investigation.
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==============================
+         FOOTER
+    =============================== -->
+
+    <footer class="footer">
+
+        <p>
+            © 2026 EduSentinel. Protecting the integrity of examinations.
+        </p>
+
+    </footer>
+
+
+    <!-- ==============================
+         JAVASCRIPT
+    =============================== -->
+
+    <script src="js/track-complaint.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Report Incident | EduSentinel</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            Edu<span>Sentinel</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#features">Features</a>
+            <a href="index.html#how-it-works">How It Works</a>
+            <a href="about.html">About</a>
+            <a href="login.html" class="login-btn">Login</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= REPORT SECTION ================= -->
+
+    <section class="report-section">
+
+        <div class="report-container">
+
+            <div class="report-heading">
+
+                <p class="report-tag">🚨 REPORT AN INCIDENT</p>
+
+                <h1>Report Suspected Exam Paper Leak</h1>
+
+                <p>
+                    Help protect examination integrity by reporting
+                    suspicious activities. Please provide accurate
+                    information and supporting evidence.
+                </p>
+
+            </div>
+
+
+            <!-- ================= FORM ================= -->
+
+            <form class="report-form">
+
+                <!-- Reporter Information -->
+
+                <h2>Reporter Information</h2>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Mobile Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter mobile number"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="role">
+                            You Are
+                        </label>
+
+                        <select id="role">
+
+                            <option value="">
+                                Select your role
+                            </option>
+
+                            <option>
+                                Student
+                            </option>
+
+                            <option>
+                                Teacher
+                            </option>
+
+                            <option>
+                                Parent
+                            </option>
+
+                            <option>
+                                Citizen
+                            </option>
+
+                            <option>
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Exam Information -->
+
+                <h2>Examination Information</h2>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="exam">
+                            Examination Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="exam"
+                            placeholder="e.g. University Semester Exam"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="subject">
+                            Subject / Paper
+                        </label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            placeholder="Enter subject or paper name"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="exam-date">
+                            Examination Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="exam-date"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="location">
+                            Exam Center / Location
+                        </label>
+
+                        <input
+                            type="text"
+                            id="location"
+                            placeholder="Enter exam center or location"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Incident Information -->
+
+                <h2>Incident Information</h2>
+
+                <div class="form-group">
+
+                    <label for="incident-type">
+                        Suspected Incident Type
+                    </label>
+
+                    <select id="incident-type">
+
+                        <option value="">
+                            Select incident type
+                        </option>
+
+                        <option>
+                            Suspected Paper Leak
+                        </option>
+
+                        <option>
+                            Paper Shared Before Exam
+                        </option>
+
+                        <option>
+                            Unauthorized Access
+                        </option>
+
+                        <option>
+                            Suspicious Question Paper
+                        </option>
+
+                        <option>
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="incident-date">
+                            Incident Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="incident-date"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="incident-time">
+                            Approximate Time
+                        </label>
+
+                        <input
+                            type="time"
+                            id="incident-time"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="description">
+                        Describe the Incident
+                    </label>
+
+                    <textarea
+                        id="description"
+                        rows="6"
+                        placeholder="Explain what happened, where it happened and how you came to know about it..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- Evidence -->
+
+                <h2>Supporting Evidence</h2>
+
+                <div class="upload-box">
+
+                    <div class="upload-icon">
+                        📎
+                    </div>
+
+                    <h3>Upload Evidence</h3>
+
+                    <p>
+                        Attach screenshots, documents or other
+                        relevant evidence.
+                    </p>
+
+                    <input
+                        type="file"
+                        id="evidence"
+                        accept=".jpg,.jpeg,.png,.pdf,.doc,.docx"
+                    >
+
+                </div>
+
+
+                <!-- Declaration -->
+
+                <div class="declaration">
+
+                    <input
+                        type="checkbox"
+                        id="declaration"
+                        required
+                    >
+
+                    <label for="declaration">
+                        I confirm that the information provided
+                        above is true and accurate to the best
+                        of my knowledge.
+                    </label>
+
+                </div>
+
+
+                <!-- Submit -->
+
+                <button
+                    type="submit"
+                    class="submit-report-btn"
+                >
+                    🚨 Submit Incident Report
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            Edu<span>Sentinel</span>
+        </div>
+
+        <p>
+            Exam Paper Leak Reporting & Alert System
+        </p>
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="login.html">Login</a>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            © 2026 EduSentinel. All rights reserved.
+        </p>
+
+    </footer>
+
+    <script src="js/report.js"></script>
+
+</body>
+
+</html>

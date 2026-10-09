@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Officer Dashboard - EduSentinel</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <div class="logo">
+            Edu<span>Sentinel</span>
+        </div>
+
+        <nav class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="officer-dashboard.html" class="active">
+                Officer Dashboard
+            </a>
+
+            <a href="about.html">About</a>
+
+            <a href="login.html">Logout</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     MAIN OFFICER DASHBOARD
+===================================================== -->
+
+<main class="officer-dashboard">
+
+    <div class="officer-container">
+
+
+        <!-- =================================================
+             OFFICER HEADER
+        ================================================== -->
+
+        <section class="officer-welcome">
+
+            <div>
+
+                <span class="officer-label">
+                    AUTHORIZED OFFICER PANEL
+                </span>
+
+                <h1>
+                    Education Monitoring Dashboard
+                </h1>
+
+                <p>
+                    Monitor, review and manage reported examination
+                    incidents through EduSentinel.
+                </p>
+
+            </div>
+
+
+            <div class="officer-profile">
+
+                <div class="officer-avatar">
+                    👮
+                </div>
+
+                <div>
+
+                    <strong>
+                        Education Officer
+                    </strong>
+
+                    <span>
+                        Authorized Official
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             ALERT BANNER
+        ================================================== -->
+
+        <section class="critical-alert">
+
+            <div class="critical-icon">
+                🚨
+            </div>
+
+            <div class="critical-content">
+
+                <span>
+                    CRITICAL ALERT
+                </span>
+
+                <h2>
+                    Suspected Paper Leak Requires Immediate Review
+                </h2>
+
+                <p>
+                    Multiple reports and supporting evidence have
+                    been received regarding the same examination.
+                </p>
+
+            </div>
+
+            <a href="incident-details.html?id=EDU-2026-00125"
+               class="critical-button">
+
+                View Incident
+
+            </a>
+
+        </section>
+
+
+        <!-- =================================================
+             STATISTICS
+        ================================================== -->
+
+        <section class="officer-stats">
+
+
+            <div class="officer-stat-card">
+
+                <div class="stat-icon">
+                    📋
+                </div>
+
+                <div>
+
+                    <span>
+                        Total Reports
+                    </span>
+
+                    <strong>
+                        27
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="officer-stat-card critical-stat">
+
+                <div class="stat-icon">
+                    🚨
+                </div>
+
+                <div>
+
+                    <span>
+                        Critical
+                    </span>
+
+                    <strong>
+                        04
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="officer-stat-card review-stat">
+
+                <div class="stat-icon">
+                    🔍
+                </div>
+
+                <div>
+
+                    <span>
+                        Under Review
+                    </span>
+
+                    <strong>
+                        09
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="officer-stat-card investigation-stat">
+
+                <div class="stat-icon">
+                    🕵️
+                </div>
+
+                <div>
+
+                    <span>
+                        Investigating
+                    </span>
+
+                    <strong>
+                        08
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="officer-stat-card resolved-stat">
+
+                <div class="stat-icon">
+                    ✅
+                </div>
+
+                <div>
+
+                    <span>
+                        Resolved
+                    </span>
+
+                    <strong>
+                        06
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             AI RISK ANALYSIS
+        ================================================== -->
+
+        <section class="ai-risk-card">
+
+            <div class="ai-risk-header">
+
+                <div>
+
+                    <span class="ai-label">
+                        AI-ASSISTED ANALYSIS
+                    </span>
+
+                    <h2>
+                        Current Risk Overview
+                    </h2>
+
+                </div>
+
+                <span class="ai-status">
+                    ● Analysis Active
+                </span>
+
+            </div>
+
+
+            <div class="risk-grid">
+
+
+                <div class="risk-item">
+
+                    <span>
+                        Critical Incidents
+                    </span>
+
+                    <strong>
+                        04
+                    </strong>
+
+                    <small>
+                        Require priority review
+                    </small>
+
+                </div>
+
+
+                <div class="risk-item">
+
+                    <span>
+                        Duplicate Reports
+                    </span>
+
+                    <strong>
+                        07
+                    </strong>
+
+                    <small>
+                        Possible related incidents
+                    </small>
+
+                </div>
+
+
+                <div class="risk-item">
+
+                    <span>
+                        Evidence Files
+                    </span>
+
+                    <strong>
+                        18
+                    </strong>
+
+                    <small>
+                        Submitted for review
+                    </small>
+
+                </div>
+
+
+                <div class="risk-score">
+
+                    <span>
+                        Highest AI Risk Score
+                    </span>
+
+                    <strong>
+                        92%
+                    </strong>
+
+                    <div class="risk-bar">
+
+                        <div class="risk-fill"></div>
+
+                    </div>
+
+                    <small>
+                        Requires authorized verification
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <p class="ai-disclaimer">
+
+                ⚠️ AI analysis is provided only as decision-support.
+                It does not determine whether an examination leak
+                has actually occurred. Final verification must be
+                performed by authorized officials.
+
+            </p>
+
+        </section>
+
+
+        <!-- =================================================
+             REPORTS SECTION
+        ================================================== -->
+
+        <section class="officer-reports-card">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        INCIDENT MANAGEMENT
+                    </span>
+
+                    <h2>
+                        Recent Complaints
+                    </h2>
+
+                </div>
+
+                <span class="report-count">
+                    27 Reports
+                </span>
+
+            </div>
+
+
+            <!-- Search + Filter -->
+
+            <div class="report-controls">
+
+                <div class="report-search">
+
+                    🔎
+
+                    <input
+                        type="text"
+                        id="reportSearch"
+                        placeholder="Search complaint ID, exam or incident..."
+                    >
+
+                </div>
+
+
+                <select id="statusFilter">
+
+                    <option value="all">
+                        All Status
+                    </option>
+
+                    <option value="critical">
+                        Critical
+                    </option>
+
+                    <option value="review">
+                        Under Review
+                    </option>
+
+                    <option value="investigating">
+                        Investigating
+                    </option>
+
+                    <option value="resolved">
+                        Resolved
+                    </option>
+
+                </select>
+
+
+                <select id="priorityFilter">
+
+                    <option value="all">
+                        All Priority
+                    </option>
+
+                    <option value="high">
+                        High
+                    </option>
+
+                    <option value="medium">
+                        Medium
+                    </option>
+
+                    <option value="low">
+                        Low
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- =================================================
+                 REPORT TABLE
+            ================================================== -->
+
+            <div class="reports-table-wrapper">
+
+                <table class="reports-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Complaint ID
+                            </th>
+
+                            <th>
+                                Incident
+                            </th>
+
+                            <th>
+                                Examination
+                            </th>
+
+                            <th>
+                                Priority
+                            </th>
+
+                            <th>
+                                AI Risk
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                            <th>
+                                Action
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="reportsTableBody">
+
+
+                        <!-- REPORT 1 -->
+
+                        <tr
+                            data-status="critical"
+                            data-priority="high"
+                        >
+
+                            <td>
+                                <strong>
+                                    EDU-2026-00125
+                                </strong>
+                            </td>
+
+                            <td>
+                                Suspected Paper Leak
+                            </td>
+
+                            <td>
+                                University Mathematics
+                            </td>
+
+                            <td>
+
+                                <span class="priority high">
+                                    HIGH
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <strong class="risk-high">
+                                    92%
+                                </strong>
+
+                            </td>
+
+                            <td>
+
+                                <span class="table-status critical">
+                                    Critical
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <a
+                                    href="incident-details.html?id=EDU-2026-00125"
+                                    class="view-report-btn"
+                                >
+                                    View
+                                </a>
+
+                            </td>
+
+                        </tr>
+
+
+                        <!-- REPORT 2 -->
+
+                        <tr
+                            data-status="review"
+                            data-priority="medium"
+                        >
+
+                            <td>
+                                <strong>
+                                    EDU-2026-00114
+                                </strong>
+                            </td>
+
+                            <td>
+                                Suspicious Question Paper
+                            </td>
+
+                            <td>
+                                University Physics
+                            </td>
+
+                            <td>
+
+                                <span class="priority medium">
+                                    MEDIUM
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <strong class="risk-medium">
+                                    71%
+                                </strong>
+
+                            </td>
+
+                            <td>
+
+                                <span class="table-status review">
+                                    Under Review
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <a
+                                    href="incident-details.html?id=EDU-2026-00114"
+                                    class="view-report-btn"
+                                >
+                                    View
+                                </a>
+
+                            </td>
+
+                        </tr>
+
+
+                        <!-- REPORT 3 -->
+
+                        <tr
+                            data-status="investigating"
+                            data-priority="high"
+                        >
+
+                            <td>
+                                <strong>
+                                    EDU-2026-00109
+                                </strong>
+                            </td>
+
+                            <td>
+                                Paper Shared Before Exam
+                            </td>
+
+                            <td>
+                                Engineering Mathematics
+                            </td>
+
+                            <td>
+
+                                <span class="priority high">
+                                    HIGH
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <strong class="risk-high">
+                                    87%
+                                </strong>
+
+                            </td>
+
+                            <td>
+
+                                <span class="table-status investigating">
+                                    Investigating
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <a
+                                    href="incident-details.html?id=EDU-2026-00109"
+                                    class="view-report-btn"
+                                >
+                                    View
+                                </a>
+
+                            </td>
+
+                        </tr>
+
+
+                        <!-- REPORT 4 -->
+
+                        <tr
+                            data-status="resolved"
+                            data-priority="low"
+                        >
+
+                            <td>
+                                <strong>
+                                    EDU-2026-00098
+                                </strong>
+                            </td>
+
+                            <td>
+                                Unauthorized Access
+                            </td>
+
+                            <td>
+                                University Chemistry
+                            </td>
+
+                            <td>
+
+                                <span class="priority low">
+                                    LOW
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <strong class="risk-low">
+                                    34%
+                                </strong>
+
+                            </td>
+
+                            <td>
+
+                                <span class="table-status resolved">
+                                    Resolved
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <a
+                                    href="incident-details.html?id=EDU-2026-00098"
+                                    class="view-report-btn"
+                                >
+                                    View
+                                </a>
+
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             QUICK ACTIONS
+        ================================================== -->
+
+        <section class="officer-quick-actions">
+
+            <h2>
+                Quick Actions
+            </h2>
+
+
+            <div class="officer-action-grid">
+
+
+                <a href="report.html" class="officer-action">
+
+                    <span>
+                        📢
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Report Incident
+                        </strong>
+
+                        <small>
+                            Submit a new official report
+                        </small>
+
+                    </div>
+
+                </a>
+
+
+                <a href="track-complaint.html" class="officer-action">
+
+                    <span>
+                        🔎
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Track Complaint
+                        </strong>
+
+                        <small>
+                            Check complaint status
+                        </small>
+
+                    </div>
+
+                </a>
+
+
+                <a href="about.html" class="officer-action">
+
+                    <span>
+                        ℹ️
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            System Information
+                        </strong>
+
+                        <small>
+                            Learn about EduSentinel
+                        </small>
+
+                    </div>
+
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SECURITY NOTICE
+        ================================================== -->
+
+        <div class="officer-security">
+
+            🔐
+
+            <strong>
+                Authorized Access Only
+            </strong>
+
+            <p>
+                This dashboard is intended for authorized education
+                officials. Complaint evidence and personal information
+                must be handled according to applicable rules and
+                institutional authorization.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <p>
+        © 2026 EduSentinel. Protecting Fair Examinations.
+    </p>
+
+</footer>
+
+
+<!-- =====================================================
+     OFFICER DASHBOARD JAVASCRIPT
+===================================================== -->
+
+<script>
+
+    /* =========================================
+       SEARCH + FILTER
+    ========================================= */
+
+    const searchInput =
+        document.getElementById("reportSearch");
+
+    const statusFilter =
+        document.getElementById("statusFilter");
+
+    const priorityFilter =
+        document.getElementById("priorityFilter");
+
+    const tableRows =
+        document.querySelectorAll("#reportsTableBody tr");
+
+
+    function filterReports() {
+
+        const searchValue =
+            searchInput.value.toLowerCase().trim();
+
+        const selectedStatus =
+            statusFilter.value;
+
+        const selectedPriority =
+            priorityFilter.value;
+
+
+        tableRows.forEach(function(row) {
+
+            const rowText =
+                row.textContent.toLowerCase();
+
+            const rowStatus =
+                row.dataset.status;
+
+            const rowPriority =
+                row.dataset.priority;
+
+
+            const matchesSearch =
+                rowText.includes(searchValue);
+
+
+            const matchesStatus =
+                selectedStatus === "all" ||
+                rowStatus === selectedStatus;
+
+
+            const matchesPriority =
+                selectedPriority === "all" ||
+                rowPriority === selectedPriority;
+
+
+            if (
+                matchesSearch &&
+                matchesStatus &&
+                matchesPriority
+            ) {
+
+                row.style.display = "";
+
+            }
+
+            else {
+
+                row.style.display = "none";
+
+            }
+
+        });
+
+    }
+
+
+    searchInput.addEventListener(
+        "input",
+        filterReports
+    );
+
+
+    statusFilter.addEventListener(
+        "change",
+        filterReports
+    );
+
+
+    priorityFilter.addEventListener(
+        "change",
+        filterReports
+    );
+
+</script>
+
+<script src="js/officer.js"></script>
+
+
+</body>
+
+</html>

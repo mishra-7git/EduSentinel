@@ -1,0 +1,741 @@
+/* =====================================================
+   EDUSENTINEL - AUTHENTICATION PAGES
+   Login + Register
+===================================================== */
+
+
+/* =====================================================
+   AUTH PAGE
+===================================================== */
+
+.login-page,
+.register-page {
+    min-height: calc(100vh - 80px);
+    padding: 60px 20px;
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(37, 99, 235, 0.10),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at bottom right,
+            rgba(14, 165, 233, 0.10),
+            transparent 35%
+        ),
+        #f8fafc;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* =====================================================
+   AUTH HEADER
+===================================================== */
+
+.login-header,
+.register-header {
+    text-align: center;
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+.login-header .auth-icon,
+.register-header .auth-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #0ea5e9
+    );
+
+    color: #ffffff;
+
+    font-size: 28px;
+
+    box-shadow:
+        0 12px 30px rgba(37, 99, 235, 0.20);
+}
+
+
+.login-header .security-label,
+.register-header .security-label {
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    color: #2563eb;
+    text-transform: uppercase;
+}
+
+
+.login-header h1,
+.register-header h1 {
+    margin: 0 0 10px;
+
+    color: #0f172a;
+
+    font-size: 34px;
+    font-weight: 800;
+
+    line-height: 1.2;
+}
+
+
+.login-header p,
+.register-header p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   AUTH CARD
+===================================================== */
+
+.login-container,
+.register-container {
+    width: 100%;
+    max-width: 520px;
+}
+
+
+.login-card,
+.register-card {
+    width: 100%;
+
+    padding: 35px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 15px 45px rgba(15, 23, 42, 0.08);
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.login-form,
+.register-form {
+    width: 100%;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #1e293b;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.form-group label span {
+    color: #ef4444;
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 13px 14px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #0f172a;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #94a3b8;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.10);
+
+    background: #ffffff;
+}
+
+
+/* =====================================================
+   SELECT
+===================================================== */
+
+.form-group select {
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   PASSWORD FIELD
+===================================================== */
+
+.password-wrapper {
+    position: relative;
+}
+
+
+.password-wrapper input {
+    padding-right: 45px;
+}
+
+
+.password-toggle {
+    position: absolute;
+
+    right: 12px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border: none;
+    background: transparent;
+
+    color: #64748b;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+
+.password-toggle:hover {
+    color: #2563eb;
+}
+
+
+/* =====================================================
+   LOGIN OPTIONS
+===================================================== */
+
+.login-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin: 5px 0 22px;
+}
+
+
+.remember-me {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+
+.remember-me input {
+    width: 15px;
+    height: 15px;
+
+    accent-color: #2563eb;
+
+    cursor: pointer;
+}
+
+
+.forgot-password {
+    color: #2563eb;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   CHECKBOX
+===================================================== */
+
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin: 20px 0;
+}
+
+
+.checkbox-group input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+
+    margin-top: 2px;
+
+    flex-shrink: 0;
+
+    accent-color: #2563eb;
+
+    cursor: pointer;
+}
+
+
+.checkbox-group label {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 13px;
+    font-weight: 400;
+
+    line-height: 1.6;
+}
+
+
+.checkbox-group label a {
+    color: #2563eb;
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+.checkbox-group label a:hover {
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   AUTH BUTTON
+===================================================== */
+
+.auth-button,
+.login-button,
+.register-button {
+    width: 100%;
+
+    padding: 14px 20px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #0ea5e9
+    );
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 20px rgba(37, 99, 235, 0.20);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        opacity 0.2s ease;
+}
+
+
+.auth-button:hover,
+.login-button:hover,
+.register-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 25px rgba(37, 99, 235, 0.28);
+}
+
+
+.auth-button:active,
+.login-button:active,
+.register-button:active {
+    transform: translateY(0);
+}
+
+
+/* =====================================================
+   AUTH LINKS
+===================================================== */
+
+.auth-link,
+.register-link,
+.login-link {
+    margin-top: 22px;
+
+    text-align: center;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+.auth-link a,
+.register-link a,
+.login-link a {
+    color: #2563eb;
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+.auth-link a:hover,
+.register-link a:hover,
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   SECURITY NOTICE
+===================================================== */
+
+.security-notice {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 12px;
+
+    margin-top: 25px;
+    padding: 15px;
+
+    border: 1px solid #dbeafe;
+
+    border-radius: 10px;
+
+    background: #eff6ff;
+
+    color: #475569;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+}
+
+
+.security-notice .security-icon {
+    flex-shrink: 0;
+
+    color: #2563eb;
+
+    font-size: 18px;
+}
+
+
+.security-notice strong {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #1e3a8a;
+}
+
+
+/* =====================================================
+   FORM ROW
+===================================================== */
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 16px;
+}
+
+
+/* =====================================================
+   FORM HELP TEXT
+===================================================== */
+
+.form-help {
+    display: block;
+
+    margin-top: 6px;
+
+    color: #94a3b8;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   ERROR MESSAGE
+===================================================== */
+
+.form-error {
+    display: none;
+
+    margin-top: 6px;
+
+    color: #dc2626;
+
+    font-size: 12px;
+}
+
+
+.form-group.error input,
+.form-group.error select {
+    border-color: #ef4444;
+
+    box-shadow:
+        0 0 0 3px rgba(239, 68, 68, 0.08);
+}
+
+
+.form-group.error .form-error {
+    display: block;
+}
+
+
+/* =====================================================
+   SUCCESS MESSAGE
+===================================================== */
+
+.form-success {
+    display: none;
+
+    margin-bottom: 20px;
+    padding: 12px 14px;
+
+    border: 1px solid #bbf7d0;
+
+    border-radius: 9px;
+
+    background: #f0fdf4;
+
+    color: #166534;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   DISABLED BUTTON
+===================================================== */
+
+.auth-button:disabled,
+.login-button:disabled,
+.register-button:disabled {
+    opacity: 0.65;
+
+    cursor: not-allowed;
+
+    transform: none;
+
+    box-shadow: none;
+}
+
+
+/* =====================================================
+   REGISTER PAGE - EXTRA SPACING
+===================================================== */
+
+.register-page {
+    padding-top: 45px;
+    padding-bottom: 60px;
+}
+
+
+.register-card {
+    max-width: 600px;
+}
+
+
+/* =====================================================
+   LOGIN PAGE
+===================================================== */
+
+.login-card {
+    max-width: 480px;
+
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   RESPONSIVE - TABLET
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .login-page,
+    .register-page {
+        padding: 45px 18px;
+    }
+
+    .login-header h1,
+    .register-header h1 {
+        font-size: 30px;
+    }
+
+    .login-card,
+    .register-card {
+        padding: 28px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE - MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .login-page,
+    .register-page {
+        padding: 30px 12px;
+    }
+
+    .login-header,
+    .register-header {
+        margin-bottom: 22px;
+    }
+
+    .login-header h1,
+    .register-header h1 {
+        font-size: 26px;
+    }
+
+    .login-header p,
+    .register-header p {
+        font-size: 13px;
+    }
+
+    .login-header .auth-icon,
+    .register-header .auth-icon {
+        width: 55px;
+        height: 55px;
+
+        font-size: 24px;
+    }
+
+    .login-card,
+    .register-card {
+        padding: 22px 18px;
+
+        border-radius: 14px;
+    }
+
+    .login-options {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 12px;
+    }
+
+    .auth-button,
+    .login-button,
+    .register-button {
+        padding: 13px 16px;
+    }
+
+}
+
+
+/* =====================================================
+   REDUCED MOTION
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .auth-button,
+    .login-button,
+    .register-button,
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        transition: none;
+    }
+
+}

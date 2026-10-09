@@ -1,0 +1,447 @@
+/* =====================================================
+   EDUSENTINEL - RESPONSIVE CSS
+   Mobile + Tablet + Desktop
+===================================================== */
+
+
+/* =====================================================
+   LARGE TABLET / SMALL LAPTOP
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .container,
+    .dashboard-container,
+    .officer-container,
+    .incident-container {
+        width: 92%;
+    }
+
+    .hero-content {
+        max-width: 650px;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+    /* ---------- Navbar ---------- */
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+
+    /* ---------- Hero ---------- */
+
+    .hero {
+        padding: 70px 20px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+
+    /* ---------- Features ---------- */
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+
+    /* ---------- How It Works ---------- */
+
+    .steps-container,
+    .how-it-works-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* ---------- Impact ---------- */
+
+    .impact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* ---------- CTA ---------- */
+
+    .cta {
+        padding: 50px 25px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE NAVIGATION
+===================================================== */
+
+@media (max-width: 768px) {
+
+    /* ---------- Navbar ---------- */
+
+    .navbar {
+        min-height: 70px;
+    }
+
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 42px;
+        height: 42px;
+
+        border: none;
+        border-radius: 8px;
+
+        background: #1e293b;
+        color: #ffffff;
+
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        position: absolute;
+
+        top: 70px;
+        left: 0;
+        right: 0;
+
+        display: none;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 0;
+
+        padding: 10px 20px 20px;
+
+        background: #0f172a;
+
+        box-shadow: 0 12px 25px rgba(15,23,42,0.18);
+
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        display: block;
+
+        padding: 12px 10px;
+
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+
+        font-size: 14px;
+    }
+
+
+    /* ---------- Hero ---------- */
+
+    .hero {
+        min-height: auto;
+        padding: 60px 20px;
+    }
+
+    .hero-content {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    /* ---------- Features ---------- */
+
+    .features,
+    .how-it-works,
+    .impact,
+    .about-section {
+        padding: 55px 20px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ---------- Steps ---------- */
+
+    .steps-container,
+    .how-it-works-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ---------- Impact ---------- */
+
+    .impact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* ---------- CTA ---------- */
+
+    .cta {
+        margin: 0 20px;
+        padding: 45px 20px;
+    }
+
+
+    /* ---------- Footer ---------- */
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    /* ---------- General ---------- */
+
+    body {
+        font-size: 14px;
+    }
+
+
+    /* ---------- Logo ---------- */
+
+    .logo {
+        font-size: 22px;
+    }
+
+
+    /* ---------- Hero ---------- */
+
+    .hero {
+        padding: 50px 16px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-buttons a,
+    .hero-buttons button {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+
+    /* ---------- Section Headings ---------- */
+
+    .section-title,
+    .section-heading {
+        font-size: 25px;
+    }
+
+    .section-subtitle {
+        font-size: 13px;
+    }
+
+
+    /* ---------- Impact ---------- */
+
+    .impact-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ---------- Footer ---------- */
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .footer {
+        padding: 40px 20px 25px;
+    }
+
+
+    /* ---------- Tables ---------- */
+
+    .table-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+
+    /* ---------- Forms ---------- */
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ---------- Report ---------- */
+
+    .report-container {
+        width: 92%;
+    }
+
+    .report-form {
+        padding: 20px;
+    }
+
+
+    /* ---------- Track Complaint ---------- */
+
+    .tracking-container {
+        width: 92%;
+    }
+
+    .tracking-card {
+        padding: 20px;
+    }
+
+
+    /* ---------- About ---------- */
+
+    .about-container {
+        width: 92%;
+    }
+
+}
+
+
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media (max-width: 420px) {
+
+    .navbar {
+        padding: 0 14px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    .features,
+    .how-it-works,
+    .impact,
+    .about-section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .dashboard-container,
+    .officer-container,
+    .incident-container {
+        width: 92%;
+    }
+
+    .welcome-card {
+        padding: 18px;
+    }
+
+    .complaint-card {
+        padding: 16px;
+    }
+
+    .stat-card {
+        padding: 15px;
+    }
+
+}
+
+
+/* =====================================================
+   LANDSCAPE MOBILE
+===================================================== */
+
+@media (max-height: 500px) and (orientation: landscape) {
+
+    .hero {
+        padding: 35px 20px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .dashboard-slider {
+        height: 220px;
+    }
+
+}
+
+
+/* =====================================================
+   ACCESSIBILITY
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+        animation: none !important;
+    }
+
+}
